@@ -2,6 +2,8 @@ package trial;
 
 import java.util.Scanner;
 
+//Program to find sum and difference of two matrices.
+
 public class Array2d {
 
 	public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class Array2d {
 		int [][] mat1=new int [r][c];
 		int [][] mat2=new int [r][c];
 		int [][] mat3=new int [r][c];
+		int [][] mat4=new int [r][c];
 		
 		System.out.println("enter element of 1st matrix");
 		
@@ -46,6 +49,26 @@ public class Array2d {
 			for(int j=0;j<c;j++)
 			{
 				System.out.print(mat3[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("\n\n");
+		
+		for(int i=0;i<r;i++)
+		{
+			for(int j=0;j<c;j++)
+			{
+				mat4[i][j]=mat1[i][j] - mat2[i][j];
+			}
+		}
+		
+		System.out.println("difference is= ");
+		for(int i=0;i<r;i++)
+		{
+			for(int j=0;j<c;j++)
+			{
+				System.out.print(mat4[i][j]+" ");
 			}
 			System.out.println();
 		}
